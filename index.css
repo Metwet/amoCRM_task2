@@ -1,0 +1,86 @@
+:root {
+    --fontInter: 'Inter', sans-serif;
+    --fontMontserrat: 'Montserrat', sans-serif;
+    --mainTextColor: #E4E5EA;
+    --secondTextColor: #656566;
+}
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+    background: #0E1014;
+}
+
+a, a:visited{
+	text-decoration: none;
+}
+
+ul, ol, li{
+	list-style: none;
+}
+
+.container {
+    max-width: 1140px;
+	margin:  0 auto;
+}
+
+/* header */
+
+.header {
+    position: absolute;
+    width: 100%;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 46px;
+    padding-top: 11px;
+}
+
+.header__logo-text {
+    font-family: var(--fontMontserrat);
+    color: var(--mainTextColor);
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-top: 10px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 30px;
+}
+
+.header__nav-link {
+    font-family: var(--fontInter);
+    color: var(--mainTextColor);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__contacts {
+    display: flex;
+    gap: 47px;
+}
+
+.header__phone {
+    color: var(--mainTextColor);
+    font-family: var(--fontInter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.header__social {
+    display: flex;
+    gap: 30px;
+}
