@@ -84,3 +84,184 @@ ul, ol, li{
     display: flex;
     gap: 30px;
 }
+
+/* main */
+
+.welcom__container {
+    position: relative;
+}
+
+.welcom__content {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 209px;
+    position: relative;
+}
+
+.welcom__left-title {
+    color: var(--mainTextColor);
+    font-family: var(--fontInter);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcom__left-welbex {
+    background: linear-gradient(90deg, #FCB045, #FF3F78);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.welcom__left-subtitle {
+    color: var(--mainTextColor);
+    font-family: var(--fontMontserrat);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 30px;
+}
+
+.welcom__right-title {
+    color: var(--mainTextColor);
+    text-align: right;
+    font-family: var(--fontInter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+
+.welcom__right-freecons {
+    font-weight: 700;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.welcom__right-freecons2{
+    background: linear-gradient(90deg, #FCB045 36.99%, #fd821d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.welcom__right-row {
+    display: flex;
+    gap: 30px;
+    justify-content: right;
+    margin-bottom: 30px;
+}
+
+.welcom__right-item_name {
+    color: var(--mainTextColor);
+    text-align: right;
+    font-family: var(--fontInter);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.welcom__right-item_description {
+    color: var(--mainTextColor);
+    text-align: right;
+    font-family: var(--fontMontserrat);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.welcom__right-button__block {
+    display: flex;
+    justify-content: right;
+    padding: 31px 0;
+}
+
+.welcom__right-button {
+    width: 262px;
+    height: 61px;
+    flex-shrink: 0;
+    background: #4077F3;
+    color: var(--mainTextColor);
+    text-align: center;
+    font-family: var(--fontInter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.welcom__background {
+    position: absolute;
+    z-index: -10;
+    top: 0;
+    left: 0;
+}
+
+.flash-purple {
+    position: absolute;
+    left: 452px;
+    top: -154px;
+    width: 259px;
+    height: 259px;
+    flex-shrink: 0;
+    border-radius: 259px;
+    opacity: 0.5;
+    background: #833AB4;
+    filter: blur(196px);
+}
+
+.sphere-purpel {
+    position: absolute;
+    left: 782px;
+    top: 0;
+    fill: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.21) 78.59%, rgba(86, 24, 128, 0.23) 100%);
+    filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
+    backdrop-filter: blur(2px);
+}
+
+.sphere-burgundy {
+    position: absolute;
+    left: 369px;
+    top: 83px;
+    fill: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(255, 208, 208, 0.54) 0%, rgba(212, 93, 93, 0.26) 59.67%, rgba(167, 49, 49, 0.25) 78.59%, rgba(130, 25, 25, 0.25) 100%);
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25));
+    backdrop-filter: blur(2px);
+}
+
+.flash-burgundy {
+    position: absolute;
+    left: -200px;
+    top: 251px;
+    width: 311px;
+    height: 311px;
+    flex-shrink: 0;
+    border-radius: 311px;
+    opacity: 0.5;
+    background: #961A1A;
+    filter: blur(196px);
+}
+
+.sphere-brown {
+    position: absolute;
+    left: 710px;
+    top: 516px;
+    fill: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.25) 59.67%, rgba(167, 49, 49, 0.26) 78.59%, rgba(130, 25, 25, 0.23) 100%);
+    filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
+    backdrop-filter: blur(2px);
+}
