@@ -13,6 +13,9 @@
 
 body {
     background: #0E1014;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 a, a:visited{
@@ -37,9 +40,12 @@ ul, ol, li{
 
 .header__container {
     display: flex;
-    justify-content: space-between;
     margin-top: 46px;
     padding-top: 11px;
+}
+
+.header__logo {
+    margin-right: 52px;
 }
 
 .header__logo-text {
@@ -69,6 +75,7 @@ ul, ol, li{
 .header__contacts {
     display: flex;
     gap: 47px;
+    margin-left: auto;
 }
 
 .header__phone {
@@ -228,7 +235,7 @@ ul, ol, li{
 
 .sphere-purpel {
     position: absolute;
-    left: 782px;
+    left: 702px;
     top: 0;
     fill: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(236, 208, 255, 0.64) 0%, rgba(161, 93, 207, 0.24) 59.67%, rgba(118, 49, 164, 0.21) 78.59%, rgba(86, 24, 128, 0.23) 100%);
     filter: drop-shadow(3px 6px 27px rgba(177, 118, 217, 0.25)) blur(5px);
@@ -264,4 +271,100 @@ ul, ol, li{
     fill: radial-gradient(82.30% 82.30% at 27.25% 26.50%, rgba(255, 208, 208, 0.48) 0%, rgba(212, 93, 93, 0.25) 59.67%, rgba(167, 49, 49, 0.26) 78.59%, rgba(130, 25, 25, 0.23) 100%);
     filter: drop-shadow(3px 6px 27px rgba(223, 125, 125, 0.25)) blur(2.5px);
     backdrop-filter: blur(2px);
+}
+
+/* footer */
+
+.footer {
+    height: 315px;
+    margin-top: auto;
+}
+
+.footer__container {
+    display: flex;
+    padding-top: 55px;
+    padding-bottom: 20px;
+}
+
+.footer__about-company {
+    margin-right: 98px;
+}
+
+.footer__cols {
+    display: flex;
+    gap: 52px;
+}
+
+.footer__title {
+    color: var(--secondTextColor);
+    font-family: var(--fontInter);
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer__link {
+    display: block;
+    color: var(--mainTextColor);
+    font-family: var(--fontInter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 10px;
+}
+
+.footer__contacts {
+    margin-left: auto;
+}
+
+.footer__contacts-title {
+    text-align: right;
+}
+
+.footer__phone {
+    color: var(--mainTextColor);
+    text-align: right;
+    font-family: var(--fontInter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 21px;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+    margin-bottom: 19px;
+}
+
+.footer__address {
+    color: var(--mainTextColor);
+    text-align: right;
+    font-family: var(--fontInter);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 70px;
+}
+
+.footer_law {
+    color: var(--mainTextColor);
+    text-align: right;
+    font-family: var(--fontMontserrat);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__privacy-policy {
+    text-decoration-line: underline;
 }
