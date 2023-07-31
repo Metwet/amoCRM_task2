@@ -94,18 +94,22 @@ ul, ol, li{
 
 /* main */
 
-.welcom__container {
+.main {
+    overflow: hidden;
+}
+
+.welcome__container {
     position: relative;
 }
 
-.welcom__content {
+.welcome__content {
     display: flex;
     justify-content: space-between;
     padding-top: 209px;
     position: relative;
 }
 
-.welcom__left-title {
+.welcome__left-title {
     color: var(--mainTextColor);
     font-family: var(--fontInter);
     font-size: 48px;
@@ -114,7 +118,7 @@ ul, ol, li{
     line-height: normal;
 }
 
-.welcom__left-welbex {
+.welcome__left-welbex {
     background: linear-gradient(90deg, #FCB045, #FF3F78);
     background-clip: text;
     -webkit-background-clip: text;
@@ -125,7 +129,7 @@ ul, ol, li{
     line-height: normal;
 }
 
-.welcom__left-subtitle {
+.welcome__left-subtitle {
     color: var(--mainTextColor);
     font-family: var(--fontMontserrat);
     font-size: 18px;
@@ -135,7 +139,7 @@ ul, ol, li{
     margin-top: 30px;
 }
 
-.welcom__right-title {
+.welcome__right-title {
     color: var(--mainTextColor);
     text-align: right;
     font-family: var(--fontInter);
@@ -146,7 +150,7 @@ ul, ol, li{
     margin-bottom: 40px;
 }
 
-.welcom__right-freecons {
+.welcome__right-freecons {
     font-weight: 700;
     letter-spacing: 0.9px;
     text-transform: uppercase;
@@ -156,21 +160,25 @@ ul, ol, li{
     color: transparent;
 }
 
-.welcom__right-freecons2{
+.welcome__right-freecons2{
     background: linear-gradient(90deg, #FCB045 36.99%, #fd821d 100%);
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
 }
 
-.welcom__right-row {
+.welcome__right-row {
     display: flex;
     gap: 30px;
     justify-content: right;
     margin-bottom: 30px;
 }
 
-.welcom__right-item_name {
+.welcome__right-gifts-mobile {
+    display: none;
+}
+
+.welcome__right-item_name {
     color: var(--mainTextColor);
     text-align: right;
     font-family: var(--fontInter);
@@ -183,7 +191,7 @@ ul, ol, li{
     margin-bottom: 6px;
 }
 
-.welcom__right-item_description {
+.welcome__right-item_description {
     color: var(--mainTextColor);
     text-align: right;
     font-family: var(--fontMontserrat);
@@ -193,13 +201,13 @@ ul, ol, li{
     line-height: normal;
 }
 
-.welcom__right-button__block {
+.welcome__right-button__block {
     display: flex;
     justify-content: right;
     padding: 31px 0;
 }
 
-.welcom__right-button {
+.welcome__right-button {
     width: 262px;
     height: 61px;
     flex-shrink: 0;
@@ -213,7 +221,7 @@ ul, ol, li{
     line-height: normal;
 }
 
-.welcom__background {
+.welcome__background {
     position: absolute;
     z-index: -10;
     top: 0;
@@ -367,4 +375,185 @@ ul, ol, li{
 
 .footer__privacy-policy {
     text-decoration-line: underline;
+}
+
+/* mobile */
+
+@media screen and (max-width: 520px) {
+
+    .container {
+        max-width: 310px;
+        margin:  0 auto;
+        padding-left: 15px;
+    }
+
+    .header {
+        position: relative;
+        z-index: 10;
+        width: 100%;
+        background: black;
+        height: 55px;
+    }
+
+    .header__container {
+        margin-top: 0;
+        padding: 20px 15px;
+    }
+
+    .header__logo,  .header__contacts, .header__nav-item:last-child{
+        display: none;
+    }
+
+    .header__nav-list {
+        gap: 16px;
+    }
+
+    .header__nav-link {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    .welcome__content {
+        display: block;
+        padding-top: 40px;
+        padding-bottom: 55px;
+    }
+
+    .welcome__left-title {
+        font-size: 36px;
+    }
+
+    .welcome__left-welbex {
+        font-size: 36px;
+    }
+
+    .welcome__left-subtitle {
+        margin-top: 15px;
+        margin-bottom: 45px;
+    }
+
+    .welcome__right-title {
+        text-align: left;
+        margin-bottom: 20px;
+    }
+
+    .welcome__right-freecons {
+        text-transform: lowercase;
+    }
+
+    .welcome__right-gifts {
+        display: none;
+    }
+
+    .welcome__right-gifts-mobile {
+        display: block;
+    }
+
+    .welcome__right-row {
+        gap: 10px;
+        justify-content: left;
+        margin-bottom: 30px;
+    }
+
+    .welcome__right-col {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        width: 50%;
+    }
+
+    .welcome__right-item_line {
+        width: 10px;
+        height: 1px;
+        background: linear-gradient(90deg, #FCB045 36.99%, #FD1D1D 100%);
+    }
+
+    .welcome__right-item_name {
+        font-family: var(--fontMontserrat);
+        text-align: left;
+        font-size: 13px;
+        font-weight: 400;
+        margin-bottom: 0;
+    }
+
+    .welcome__right-item_description, .welcome__right-button__block, .sphere-burgundy {
+        display: none;
+    }
+
+    .sphere-purpel {
+        left: 300px;
+        top: 230px;
+    }
+
+    .sphere-brown {
+        left: 10px;
+        top: 420px;
+    }
+
+    .flash-purple {
+        left: 320px;
+        top: 120px;
+    }
+
+    .footer {
+        height: 570px;
+    }
+    
+
+    .footer__container {
+        display: block;
+        padding-top: 45px;
+        padding-bottom: 60px;
+    }
+
+    .footer__about-company {
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .footer__cols {
+        gap: 48px;
+    }
+
+    .footer__title {
+        font-size: 12px;
+        letter-spacing: 0.6px;
+    }
+
+    .footer__link {
+        font-size: 14px;
+    }
+
+    .footer__menu {
+        margin-bottom: 30px;
+    }
+
+    .footer__contacts {
+        margin-left: 0;
+    }
+
+    .footer__contacts-title {
+        text-align: left;
+    }
+
+    .footer__phone {
+        text-align: left;
+        margin-bottom: 8px;
+    }
+
+    .footer__social {
+        justify-content: left;
+        margin-bottom: 10px;
+    }
+
+    .footer__address {
+        text-align: left;
+        font-size: 14px;
+        margin-bottom: 50px;
+    }
+
+    .footer_law {
+        text-align: left;
+    }
+
 }
