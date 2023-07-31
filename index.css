@@ -262,7 +262,7 @@ ul, ol, li{
 .flash-burgundy {
     position: absolute;
     left: -200px;
-    top: 251px;
+    top: 150px;
     width: 311px;
     height: 311px;
     flex-shrink: 0;
